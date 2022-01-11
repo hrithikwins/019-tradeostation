@@ -14,38 +14,43 @@ export default function Home() {
             </div>
             <hr />
             {/* this is the banner now */}
-            <div className="container">
+            <div className="container py-5">
                 <div className="row">
                     <div className="col-md-5">
                         <div className="d-flex flex-column justify-content-center">
                             <div className="py-4">
                                 <h1 className={styles.title + " fw-bold"}>
-                                    Your Upgraded version by committing some
-                                    time for yourself{" "}
+                                    Upgrade Yourself by committing some&nbsp;
+                                    <span className={styles.secondaryText}>
+                                        time
+                                    </span>{" "}
+                                    for your
+                                    <span className={styles.tertiaryText}>
+                                        &nbsp;self{" "}
+                                    </span>
                                 </h1>
                             </div>
                             <p className={styles.paragraph}>
-                                Our Aim at time commit is to help you develop
-                                good habits and achieve your goals.
+                                Good habits can help you achieve your goals
                             </p>
                             <div className="d-flex py-md-5">
-                                <div className="btn btn-success">
-                                    Get Started
-                                </div>
+                                <div className={styles.button}>Get Started</div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 p-5">
+                    <div className="col-md-3">
                         <div className="" style={{ position: "relative" }}>
                             <Image
-                                src="/images/banner.png"
+                                src="/images/banner.jpeg"
+                                className={styles.bannerImage}
                                 alt="banner"
                                 width={900}
-                                height={600}
+                                height={1600}
                                 priority={true}
                             />
                         </div>
                     </div>
+                    {/* column next */}
                 </div>
             </div>
             {/* end banner  */}
